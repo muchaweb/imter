@@ -1,0 +1,44 @@
+doctype html
+html(class="no-js")
+  head
+    //- TODO: Check if it's the good charset
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title nied page
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //- TODO : Place favicon.ico and apple-touch-icon.png in the root directory
+    block css
+      link(rel='stylesheet', href='styles/style.css')
+    block top-script
+      script(src='component/modernizr/modernizr.js')
+  body
+    //-
+      Add your site or application content here
+    block main
+      header#header
+        .se-container
+          section.slope
+            article.slope-content
+              h3 Some headline
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia perferendis, quam corporis. Dolorum impedit, cum explicabo quaerat totam quae sunt soluta provident molestias minus vero. Non aspernatur ducimus, ab earum?
+          section.slope
+            article.slope-content
+              h3 Some headline
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia perferendis, quam corporis. Dolorum impedit, cum explicabo quaerat totam quae sunt soluta provident molestias minus vero. Non aspernatur ducimus, ab earum?
+
+
+    block bottom-script
+      script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+      script.
+        window.jQuery || document.write('<script src="component/jquery/jquery.min.js"><\/script>')
+      script(src="component/underscore/underscore.js")
+      script(src='scripts/main.js')
+      //- TODO : Google Analytics: change UA-XXXXX-X to be your site\'s ID.
+      script.
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');

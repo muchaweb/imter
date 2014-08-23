@@ -1,0 +1,9 @@
+@mixin coloration-and-rotate($force-color, $bg-color, $angle: 5deg){
+  background-color: $bg-color;
+  color: $force-color;
+  @include transform(rotate($angle));
+  .slope__content{
+    padding: 3em 0;
+    @include transform(rotate(-$angle));
+  }
+}

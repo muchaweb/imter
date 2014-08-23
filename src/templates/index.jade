@@ -9,23 +9,18 @@ html(class="no-js")
     meta(name='viewport', content='width=device-width, initial-scale=1')
     //- TODO : Place favicon.ico and apple-touch-icon.png in the root directory
     block css
+      link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,700,700italic,300|Jura:400,600')
       link(rel='stylesheet', href='styles/style.css')
     block top-script
       script(src='component/modernizr/modernizr.js')
   body
     //-
       Add your site or application content here
-    block main
-      header#header
-        .se-container
-          section.slope
-            article.slope-content
-              h3 Some headline
-              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia perferendis, quam corporis. Dolorum impedit, cum explicabo quaerat totam quae sunt soluta provident molestias minus vero. Non aspernatur ducimus, ab earum?
-          section.slope
-            article.slope-content
-              h3 Some headline
-              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia perferendis, quam corporis. Dolorum impedit, cum explicabo quaerat totam quae sunt soluta provident molestias minus vero. Non aspernatur ducimus, ab earum?
+    block wrapp
+      .wrapper
+        block main-content
+          .main
+            include partials/home-content
 
 
     block bottom-script

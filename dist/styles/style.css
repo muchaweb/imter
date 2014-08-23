@@ -483,6 +483,28 @@ th {
 * Base styles.
 * ----------------------------------------------------------------------------------------------------
 **/
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+body {
+  background: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 /**
 * ----------------------------------------------------------------------------------------------------
 * IE8 styles.
@@ -498,73 +520,125 @@ th {
 * Header styles.
 * --------------------------------------------------------------------------------------------------
 **/
-body {
-  background: #037e8c;
-}
-
-.se-container {
-  padding-top: 150px;
-  overflow: hidden;
-}
-.se-container .slope {
-  color: #fff;
-  margin: 0 -50px;
-  margin-top: -200px;
-  -webkit-transform-origin: left center 50%;
-  -moz-transform-origin: left center 50%;
-  -ms-transform-origin: left center 50%;
-  -o-transform-origin: left center 50%;
-  transform-origin: left center 50%;
-}
-.se-container .slope .slope-content p {
-  width: 50%;
-  max-width: 500px;
-  margin: 0 auto;
-  line-height: 1.5em;
-  font-size: 22px;
-  font-style: italic;
-}
-.se-container .slope:nth-child(odd) {
-  background-color: #037e8c;
-  color: #024959;
-  -webkit-transform: rotate(-7deg);
-  -moz-transform: rotate(-7deg);
-  -ms-transform: rotate(-7deg);
-  -o-transform: rotate(-7deg);
-  transform: rotate(-7deg);
-  margin-top: 0;
-}
-.se-container .slope:nth-child(odd) .slope-content {
-  padding: 130px 100px 250px 100px;
-  -webkit-transform: rotate(7deg);
-  -moz-transform: rotate(7deg);
-  -ms-transform: rotate(7deg);
-  -o-transform: rotate(7deg);
-  transform: rotate(7deg);
-}
-.se-container .slope:nth-child(even) {
-  background-color: #024959;
-  color: #037e8c;
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
-  -o-transform: rotate(5deg);
-  transform: rotate(5deg);
-}
-.se-container .slope:nth-child(even) .slope-content {
-  padding: 130px 100px 250px 100px;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  transform: rotate(-5deg);
-}
-
 /**
 * ----------------------------------------------------------------------------------------------------
 * Main styles
 * ----------------------------------------------------------------------------------------------------
 **/
+.slopes {
+  padding-top: 150px;
+  overflow: hidden;
+}
+
+.slope__child {
+  color: #000;
+  margin: 0 -50px;
+  -moz-transform-origin: left center 50%;
+  -ms-transform-origin: left center 50%;
+  -webkit-transform-origin: left center 50%;
+  transform-origin: left center 50%;
+}
+.slope__child:nth-child(odd) {
+  background-color: white;
+  color: #038541;
+  -moz-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}
+.slope__child:nth-child(odd) .slope__content {
+  padding: 3em 0;
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(7deg);
+}
+.slope__child:nth-child(even) {
+  background-color: #e1e1e1;
+  color: white;
+  -moz-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}
+.slope__child:nth-child(even) .slope__content {
+  padding: 3em 0;
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(7deg);
+}
+
+.main-services__column {
+  width: 460.0px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.service-link {
+  display: inline-block;
+  position: relative;
+  height: auto;
+}
+
+.service-link__label {
+  position: absolute;
+  bottom: 1em;
+  z-index: 5;
+  color: white;
+  font-size: 18px;
+}
+
+.service-link__label--left {
+  right: 1em;
+}
+
+.service-link__label--right {
+  left: 1em;
+}
+
+.service-link__image {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.main-features__column {
+  width: 300px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.feature {
+  display: inline-block;
+  margin: 3em 0;
+}
+
+.feature__title,
+.feature__subtitle {
+  margin: 0;
+  color: #2f2f2f;
+}
+
+.feature__title {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.feature__subtitle {
+  font-size: 21px;
+  line-height: 35px;
+  margin-top: 2em;
+}
+
+.feature__text {
+  color: #666666;
+  font-weight: 300;
+}
+
 /**
 * ----------------------------------------------------------------------------------------------------
 * Footer styles.
@@ -583,7 +657,7 @@ body {
 hr {
   display: block;
   height: 1px;
-  margin: 48px 0;
+  margin: 42px 0;
   border: none;
   background-color: #eeeeee;
 }

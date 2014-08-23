@@ -3,44 +3,6 @@
 * Header styles.
 * --------------------------------------------------------------------------------------------------
 **/
-@mixin coloration-and-rotate($force-color, $bg-color, $angle: 5deg){
-  background-color: $bg-color;
-  color: $force-color;
-  @include transform(rotate($angle));
-  .slope-content{
-    padding: 130px 100px 250px 100px;
-    @include transform(rotate(-$angle));
-  }
-}
-body {
-  background: $color__base--modifier-B;
-}
-.se-container{
-  padding-top: 150px;
-  overflow: hidden;
-  .slope{
-    color: #fff;
-    margin: 0 -50px;
-    margin-top: -200px;
-    @include transform-origin(left center);
-    .slope-content{
-      p{
-        width: 50%;
-        max-width: 500px;
-        margin: 0 auto;
-        line-height: 1.5em;
-        font-size: 22px;
-        font-style: italic;
-      }
-    }
-  }
 
-  .slope:nth-child(odd){
-    @include coloration-and-rotate($color__base--modifier-A,$color__base--modifier-B, -7deg);
-    margin-top: 0;
-  }
-  .slope:nth-child(even){
-    @include coloration-and-rotate($color__base--modifier-B,$color__base--modifier-A, 5deg);
-  }
 
-}
+

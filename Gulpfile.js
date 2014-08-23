@@ -60,6 +60,7 @@ gulp.task('styles', function () {
   .pipe(compass({
     config_file: './config.rb',
     css : paths.styles.dest,
+    require : 'susy',
     sass: 'src/styles',
     errLogToConsole: true
   }))

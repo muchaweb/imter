@@ -6,16 +6,16 @@
 
 
 //* Typography */
-$base__font--size           : 16px;
-$base__font--sans           : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base__font--size           : 14px;
+$base__font--sans           : 'Roboto', sans-serif;
 $base__font--serif          : Georgia, serif;
 $base__font--height         : $base__font--size * 1.5;
 
 //* Colors */
 $color__link                : #4183C4;
 $color__link--hover         : #333;
-$color__text                : #333;
-$color__text--light         : #777;
+$color__text                : #2f2f2f;
+$color__text--light         : #666666;
 $color__hr                  : #EEE;
 
 //* Colors social media */
@@ -26,11 +26,10 @@ $color__pinterest           : #CB2027;
 
 //* Color scheme */
 
-$color__base--modifier-A    : #024959;
-$color__base--modifier-B    : #037E8C;
-$color__base--modifier-C    : #FFFFFA;
-$color__base--modifier-D    : #F24C27;
-$color__base--modifier-E    : #5F5448;
+$color__base--forest-green : #038541;
+$color__base--law-green    : #7ac142;
+$color__base--blue         : #20368d;
+$color__base--snow         : #e1e1e1;
 
 $color__validation--error   : #FF4C4C;
 $color__validation--success : #7CC576;
@@ -38,4 +37,4 @@ $color__validation--success : #7CC576;
 
 //* Positioning */
 $margin__multiplier         : 2;
-$margin__general            : $base__font--height * $margin__multiplier;
+$margin__general            : $base__font--height * $margin__multiplier; //

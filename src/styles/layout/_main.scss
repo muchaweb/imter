@@ -3,3 +3,81 @@
 * Main styles
 * ----------------------------------------------------------------------------------------------------
 **/
+
+.slopes {
+  padding-top: 150px;
+  overflow: hidden;
+}
+
+.slope__child {
+  color: #000;
+  margin: 0 -50px;
+  @include transform-origin(left center);
+  &:nth-child( odd ) {
+    @include coloration-and-rotate($color__base--forest-green, white, -7deg);
+  }
+  &:nth-child( even ) {
+    @include coloration-and-rotate(white,$color__base--snow  , -7deg);
+  }
+}
+
+.main-services__column {
+  @include span(6 of 12)
+}
+
+.service-link {
+  display: inline-block;
+  position: relative;
+  height: auto;
+}
+.service-link__label {
+  position: absolute;
+  bottom: 1em;
+  z-index: 5;
+
+  color: white;
+  font-size: 18px;
+}
+.service-link__label--left {
+    right: 1em;
+}
+.service-link__label--right {
+    left: 1em;
+}
+.service-link__image {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.main-features__column {
+  @include span(4 of 12);
+  text-align: center;
+}
+
+.feature {
+  display: inline-block;
+  margin: 3em 0;
+}
+
+.feature__title,
+.feature__subtitle {
+  margin: 0;
+  color: $color__text;
+}
+
+.feature__title {
+  font-size: $base__font--size * 2.5;
+  line-height: $base__font--size * 2.5 ;
+}
+.feature__subtitle {
+  font-size: $base__font--size * 1.5;
+  line-height: $base__font--size * 2.5;
+  margin-top: 2em;
+}
+.feature__text {
+  color: $color__text--light;
+  font-weight: 300;
+}
+
+

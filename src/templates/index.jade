@@ -10,6 +10,7 @@ html(class="no-js")
     //- TODO : Place favicon.ico and apple-touch-icon.png in the root directory
     block css
       link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,700,700italic,300|Jura:400,600')
+      link(rel="stylesheet", type="text/css", href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
       link(rel='stylesheet', href='styles/style.css')
     block top-script
       script(src='component/modernizr/modernizr.js')
@@ -28,6 +29,7 @@ html(class="no-js")
       script.
         window.jQuery || document.write('<script src="component/jquery/jquery.min.js"><\/script>')
       script(src="component/underscore/underscore.js")
+      script(src="component/jcarousel/dist/jquery.jcarousel.min.js")
       script(src='scripts/main.js')
       //- TODO : Google Analytics: change UA-XXXXX-X to be your site\'s ID.
       script.

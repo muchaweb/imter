@@ -80,4 +80,89 @@
   font-weight: 300;
 }
 
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+}
 
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-portfolio {
+  margin: 2em 0;
+  clear: both;
+  height: auto;
+  overflow: hidden;
+}
+.carousel-portfolio__item {
+  display: block;
+  @include span(3 of 12);
+}
+
+.portfolio-item {
+  position: relative;
+  display: inline-block;
+  height: auto;
+}
+
+.portfolio-item__overlay {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  padding: 1em;
+
+  background: rgba($color__text, 0.5);
+  text-align: center;
+}
+
+.portofolio-item__image {
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+.portfolio-zoom {
+  display: inline-block;
+  position: relative;
+  top: 25%;
+  text-align: center;
+}
+.portfolio-zoom__icon,
+.portfolio-zoom__label {
+  display: inline-block;
+  color : white;
+}
+.portfolio-zoom__icon {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.portfolio-zoom__label {
+  font-size: $base__font--size;
+}
+
+.carousel-controls {
+  width: 100px;
+  float: right;
+  margin-right: 5px;
+  margin-bottom: 1em;
+}
+.carousel-controls__item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: $color__text--light;
+  background: lighten($color__base--snow, 10%);
+  &:hover {
+    background: darken($color__base--snow, 10%);
+  }
+}

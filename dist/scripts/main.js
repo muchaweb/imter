@@ -1,11 +1,20 @@
 (function() {
-  var Name;
+  $('.carousel-portfolio').jcarousel();
 
-  Name = (function() {
-    function Name() {}
+  $(".jcarousel-control-prev").on("jcarouselcontrol:active", function() {
+    $(this).removeClass("inactive");
+  }).on("jcarouselcontrol:inactive", function() {
+    $(this).addClass("inactive");
+  }).jcarouselControl({
+    target: "-=1"
+  });
 
-    return Name;
-
-  })();
+  $(".jcarousel-control-next").on("jcarouselcontrol:active", function() {
+    $(this).removeClass("inactive");
+  }).on("jcarouselcontrol:inactive", function() {
+    $(this).addClass("inactive");
+  }).jcarouselControl({
+    target: "+=1"
+  });
 
 }).call(this);

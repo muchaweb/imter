@@ -34,8 +34,30 @@
   .slope__child
     .slope__content
       .container
-        h3 Some headline
-        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo harum nihil beatae numquam hic. Impedit illo non molestias doloribus ut tempora est quod, accusamus eaque voluptatem corporis explicabo adipisci animi!
+       .main-portfolio
+        .carousel-wrapper
+          .carousel-controls
+            a(href="#", class="carousel-controls__item jcarousel-control-prev")
+              i.fa.fa-chevron-left
+            a(href="#", class="carousel-controls__item jcarousel-control-next")
+              i.fa.fa-chevron-right
+          .jcarousel.carousel-portfolio
+            ul
+              - for (var i = 0; i < 10; ++i) {
+                li.carousel-portfolio__item
+                  .portfolio-item
+                    a(href="#" class="portfolio-item__overlay")
+                      span.portfolio-zoom
+                        i.fa.fa-search-plus.portfolio-zoom__icon
+                        span.portfolio-zoom__label Construccion Sustentable Rio Belo
+                    .portfolio-item__image
+                      img(src="http://placehold.it/620x480", alt="" class="img-responsive")
+              - }
+
+
+
+
+
   .slope__child
     .slope__content
       .container

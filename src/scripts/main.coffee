@@ -18,3 +18,9 @@ $(".jcarousel-control-next").on("jcarouselcontrol:active", ->
 
 # Options go here
 ).jcarouselControl target: "+=1"
+
+portfolioBlock = $('.carousel-portfolio .portfolio-item')
+portfolioBlockActive = portfolioBlock.find ".js__action--active"
+
+portfolioBlock.hover ->
+  $(this).toggleClass "js__action--active"

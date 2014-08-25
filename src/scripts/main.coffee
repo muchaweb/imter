@@ -24,3 +24,5 @@ portfolioBlockActive = portfolioBlock.find ".js__action--active"
 
 portfolioBlock.hover ->
   $(this).toggleClass "js__action--active"
+
+$('.slider').slippry( useCss: true, transition: 'horizontal' )

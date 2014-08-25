@@ -1,40 +1,108 @@
 .slopes
-  .slope__child
+  header.slope__child.header
+    .slope__content
+      .container.clearfix
+        .header__left.brand
+          h1.brand__logo
+            a(href="#" class="brand__link") Imter Impulsadora de tecnologías renovables
+        .header__right.relative
+          .callout
+            .callout__item
+              ul.list-nostyle.social-menu
+                li.social-menu__item
+                  a(href="#", target="_blank" class="social-menu__link")
+                    i.fa.fa-facebook-square
+                li.social-menu__item
+                  a(href="#", target="_blank" class="social-menu__link")
+                    i.fa.fa-twitter-square
+                li.social-menu__item
+                  a(href="#", target="_blank" class="social-menu__link")
+                    i.fa.fa-google-plus-square
+            .callout__item.callout__item--last
+              a(href="tel:(443)3147000" class="phone")
+                i.fa.fa-phone.phone__icon
+                span.phone__label (443) 314 70 00
+          nav.main-nav.right
+            ul.zero.menu.clearfix
+              li.menu__item
+                a(href="#" class="menu__link") Inicio
+              li.menu__item
+                a(href="#" class="menu__link") Filosofía
+              li.menu__item
+                a(href="#" class="menu__link") Servicios
+              li.menu__item
+                a(href="#" class="menu__link") Portafolio
+              li.menu__item.menu__item--last
+                a(href="#" class="menu__link") Contacto
+  .slider-self
+    ul.slider
+      li.slider__item
+        .slider__caption
+          .container
+            .caption
+              h2.caption__title Construyendo por un bien mayor
+              p.caption__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quidem tenetur error cumque quis perferendis ducimus soluta nostrum excepturi, repellendus laudantium saepe porro voluptatum, facilis inventore non autem. Quis, velit.
+              a(href="#").caption__link Descúbrelo
+        a(href="#", target="_blank")
+          img(src="images/imter__slide--1.jpg", alt="")
+      li.slider__item
+        .slider__caption
+          .container
+            .caption
+              h2.caption__title Headline
+              p.caption__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam expedita atque asperiores possimus rerum, qui sequi quia quis voluptatibus. Dolorem mollitia labore itaque provident accusamus sint ut quae quidem facilis.
+              a(href="#").caption__link read more
+        a(href="#", target="_blank")
+          img(src="images/imter__slide--2.jpg", alt="")
+      li.slider__item
+        .slider__caption
+          .container
+            .caption
+              h2.caption__title Headline
+              p.caption__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorem voluptatum explicabo, nihil quos nobis, asperiores animi eligendi numquam aliquam cum ea! Veritatis dolorem saepe itaque inventore, quos fugiat culpa.
+              a(href="#").caption__link read more
+        a(href="#", target="_blank")
+          img(src="images/imter__slide--3.jpg", alt="")
+
+  .slope__child.first-content
     .slope__content
       .container
-        .main-services.clearfix
-          .main-services__column
-            a(href="#", target="_blank" class="service-link" )
-              span.service-link__label.service-link__label--left Espacios <br> Sustentables
-              img(src="images/imter__service--espacios-sustentables.png", alt="" class="service-link__image")
-          .main-services__column
-            a(href="#", target="_blank" class="service-link" )
-              span.service-link__label.service-link__label--right Ecotécnias
-                <br>Energía Solar
-              img(src="images/imter__service--ecotecnias.png", alt="" class="service-link__image")
-        .main-features.clearfix
-          .main-features__column
-            .feature
-              h2.feature__title 70 <br>
-              span.feature__subtitle Proyectos Realizados
-              p.feature__text
-                Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a
-          .main-features__column
-            .feature
-              h2.feature__title 50-70% <br>
-              span.feature__subtitle En ahorro anual
-              p.feature__text
-                Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a
-          .main-features__column
-            .feature
-              h2.feature__title 34 <br>
-              span.feature__subtitle Años de Experiencia
-              p.feature__text
-                Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a
-  .slope__child
+        .main-services-and-features
+          h2.heading.heading--large.text-centered Servicios que ofrecemos
+          .main-services.clearfix
+            .main-services__column
+              a(href="#", target="_blank" class="service-link" )
+                span.service-link__label.service-link__label--left Espacios <br> Sustentables
+                img(src="images/imter__service--espacios-sustentables.png", alt="" class="service-link__image")
+            .main-services__column
+              a(href="#", target="_blank" class="service-link" )
+                span.service-link__label.service-link__label--right Ecotécnias
+                  <br>Energía Solar
+                img(src="images/imter__service--ecotecnias.png", alt="" class="service-link__image")
+          .main-features.clearfix
+            .main-features__column
+              .feature
+                h2.feature__title 70 <br>
+                span.feature__subtitle Proyectos Realizados
+                p.feature__text
+                  Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a
+            .main-features__column
+              .feature
+                h2.feature__title 50-70% <br>
+                span.feature__subtitle En ahorro anual
+                p.feature__text
+                  Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a
+            .main-features__column
+              .feature
+                h2.feature__title 34 <br>
+                span.feature__subtitle Años de Experiencia
+                p.feature__text
+                  Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a
+  .slope__child.slope__child--textured
     .slope__content
       .container
-       .main-portfolio
+       .main-portfolio.relative
+        h2.heading.heading--large.text-centered Algunos de nuestros proyectos
         .carousel-wrapper
           .carousel-controls
             a(href="#", class="carousel-controls__item jcarousel-control-prev")
@@ -53,14 +121,14 @@
                     .portfolio-item__image
                       img(src="http://placehold.it/620x480", alt="" class="img-responsive")
               - }
-
-
-
-
-
   .slope__child
     .slope__content
-      .container
-        h3 Some headline
-        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo harum nihil beatae numquam hic. Impedit illo non molestias doloribus ut tempora est quod, accusamus eaque voluptatem corporis explicabo adipisci animi!
+      footer.footer
+        .container
+          .footer__column
+            h4.heading Imter Ecotécnias
+            ul.menu
+              li.menu__item
+                a(href="#" class="menu__link") Link
+
 

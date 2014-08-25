@@ -526,53 +526,274 @@ body {
 * Header styles.
 * --------------------------------------------------------------------------------------------------
 **/
+.header {
+  background: white;
+  position: relative;
+  z-index: 10;
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.header .slope__content {
+  padding: 0em 0 3em 0;
+}
+
+.header__left {
+  width: 220px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.brand__logo, .brand__link {
+  display: block;
+  margin: 0;
+  position: relative;
+  top: 0.75em;
+  background: url('../images/imter__logo.png?1408991651') no-repeat;
+  width: 137px;
+  height: 138px;
+}
+
+.brand__link {
+  background: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+.header__right {
+  width: 700px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main-nav {
+  position: relative;
+  top: 5em;
+}
+
+.menu__item {
+  display: block;
+  float: left;
+  margin: 0 0.5em;
+}
+.menu__item:hover > .menu__link, .menu__item.js__action--active > .menu__link {
+  background: #038541;
+  color: white;
+}
+
+.menu__item--last {
+  margin-right: 0;
+}
+
+.menu__link {
+  display: block;
+  background: transparent;
+  color: #000;
+  padding: 0.25em 0.5em;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+
+.callout {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #20368d;
+  -moz-border-radius-bottomleft: 0.5em;
+  -webkit-border-bottom-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  -moz-border-radius-bottomright: 0.5em;
+  -webkit-border-bottom-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.callout__item {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 46px;
+  padding: 0 0.5em;
+}
+
+.callout__item--last {
+  border-left: 1px solid #2946b7;
+}
+
+.social-menu__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-menu__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+.phone {
+  color: white;
+}
+
+.phone__icon,
+.phone__label {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.0em .25em;
+}
+
+.phone__icon {
+  font-size: 18px;
+}
+
+.phone__label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.slider-self {
+  position: relative;
+  margin-top: -6em;
+  z-index: 0;
+}
+
+.slider__caption {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  bottom: 0;
+  color: white;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0) 0%, #000000 75%);
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, #000000 75%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, #000000 75%);
+}
+
+.caption {
+  position: relative;
+}
+
+.caption__title {
+  font-family: "Jura", serif;
+  font-size: 42px;
+  padding-bottom: 0.5em;
+  margin-bottom: 0;
+  position: relative;
+  margin-left: 10px;
+}
+.caption__title:before {
+  content: "";
+  position: absolute;
+  width: 336px;
+  height: 3px;
+  bottom: 0;
+  background: #7ac142;
+}
+
+.caption__text {
+  width: 460.0px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sy-slides-wrap {
+  z-index: 50;
+}
+
+.sy-pager {
+  position: absolute;
+  width: 100%;
+  bottom: 9em;
+  z-index: 100;
+}
+
+.sy-pager li.sy-active a {
+  background: #038541;
+}
+
 /**
 * ----------------------------------------------------------------------------------------------------
 * Main styles
 * ----------------------------------------------------------------------------------------------------
 **/
+.heading {
+  font-family: "Jura", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.heading--large {
+  font-size: 21px;
+  color: #2f2f2f;
+  position: relative;
+  padding-bottom: 0.5em;
+  margin-bottom: 2em;
+}
+.heading--large:before {
+  content: "";
+  display: inline-block;
+  width: 168px;
+  background: #2f2f2f;
+  left: 50%;
+  margin-left: -84px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+}
+
 .slopes {
-  padding-top: 150px;
   overflow: hidden;
 }
 
 .slope__child {
   color: #000;
+  background: white;
   margin: 0 -50px;
   -moz-transform-origin: left center 50%;
   -ms-transform-origin: left center 50%;
   -webkit-transform-origin: left center 50%;
   transform-origin: left center 50%;
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
-.slope__child:nth-child(odd) {
-  background-color: white;
-  color: #038541;
-  -moz-transform: rotate(-7deg);
-  -ms-transform: rotate(-7deg);
-  -webkit-transform: rotate(-7deg);
-  transform: rotate(-7deg);
+.slope__child .slope__content {
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
 }
-.slope__child:nth-child(odd) .slope__content {
-  padding: 3em 0;
-  -moz-transform: rotate(7deg);
-  -ms-transform: rotate(7deg);
-  -webkit-transform: rotate(7deg);
-  transform: rotate(7deg);
+
+.slope__child--textured {
+  background: url('../images/imter__pat.jpg?1408991651');
+  -moz-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.15);
 }
-.slope__child:nth-child(even) {
-  background-color: #e1e1e1;
-  color: white;
-  -moz-transform: rotate(-7deg);
-  -ms-transform: rotate(-7deg);
-  -webkit-transform: rotate(-7deg);
-  transform: rotate(-7deg);
+
+.first-content {
+  margin-top: -7em;
+  -moz-box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.15);
 }
-.slope__child:nth-child(even) .slope__content {
-  padding: 3em 0;
-  -moz-transform: rotate(7deg);
-  -ms-transform: rotate(7deg);
-  -webkit-transform: rotate(7deg);
-  transform: rotate(7deg);
+
+.main-services-and-features,
+.main-portfolio {
+  padding: 6em 0 4em 0;
 }
 
 .main-services__column {
@@ -645,11 +866,6 @@ body {
   font-weight: 300;
 }
 
-.main-portfolio {
-  padding: 2em 0 4em 0;
-  overflow: hidden;
-}
-
 .jcarousel {
   position: relative;
   overflow: hidden;
@@ -664,7 +880,6 @@ body {
 }
 
 .carousel-portfolio {
-  margin: 2em 0;
   clear: both;
   height: auto;
   overflow: hidden;
@@ -699,11 +914,9 @@ body {
   background: rgba(47, 47, 47, 0.5);
   text-align: center;
   -moz-transition-property: bottom;
-  -o-transition-property: bottom;
   -webkit-transition-property: bottom;
   transition-property: bottom;
   -moz-transition-duration: 0.33s;
-  -o-transition-duration: 0.33s;
   -webkit-transition-duration: 0.33s;
   transition-duration: 0.33s;
 }
@@ -737,8 +950,10 @@ body {
 }
 
 .carousel-controls {
+  position: absolute;
   width: 100px;
-  float: right;
+  right: 0;
+  top: 7em;
   margin-right: 5px;
   margin-bottom: 1em;
 }
@@ -767,6 +982,23 @@ body {
 * Buttons styles.
 * ----------------------------------------------------------------------------------------------------
 **/
+.caption__link {
+  display: inline-block;
+  clear: both;
+  background: #7ac142;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Jura", serif;
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 1em;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+
 /**
 * ----------------------------------------------------------------------------------------------------
 * Dividers.
@@ -777,7 +1009,7 @@ hr {
   height: 1px;
   margin: 42px 0;
   border: none;
-  background-color: #EEE;
+  background-color: #eeeeee;
 }
 
 /**

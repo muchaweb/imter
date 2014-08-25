@@ -1,9 +1,12 @@
-@mixin coloration-and-rotate($force-color, $bg-color, $angle: 5deg){
-  background-color: $bg-color;
-  color: $force-color;
+@mixin hide-text {
+  font        : 0/0 a;
+  text-shadow : none;
+  color       : transparent;
+}
+
+@mixin slope-rotate($angle: 5deg) {
   @include transform(rotate($angle));
   .slope__content{
-    padding: 3em 0;
     @include transform(rotate(-$angle));
   }
 }

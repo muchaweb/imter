@@ -27,4 +27,9 @@
     return $(this).toggleClass("js__action--active");
   });
 
+  $('.slider').slippry({
+    useCss: true,
+    transition: 'horizontal'
+  });
+
 }).call(this);

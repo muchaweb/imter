@@ -3,24 +3,53 @@
 * Main styles
 * ----------------------------------------------------------------------------------------------------
 **/
+.heading {
+  font-family: $base__font--modern;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.heading--large {
+  font-size: $base__font--size * 1.5;
+  color: $color__text;
+  position: relative;
+  padding-bottom: 0.5em;
+  margin-bottom: 2em;
+  &:before {
+    content : "";
+    display: inline-block;
+    width: $base__font--size * 12;
+    background: $color__text;
+    left: 50%;
+    margin-left: -$base__font--size * 12 / 2;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+  }
 
+}
 .slopes {
-  padding-top: 150px;
   overflow: hidden;
 }
 
 .slope__child {
   color: #000;
+  background: white;
   margin: 0 -50px;
   @include transform-origin(left center);
-  &:nth-child( odd ) {
-    @include coloration-and-rotate($color__base--forest-green, white, -7deg);
-  }
-  &:nth-child( even ) {
-    @include coloration-and-rotate(white,$color__base--snow  , -7deg);
-  }
+  @include slope-rotate(-5deg);
 }
-
+.slope__child--textured {
+  background: image-url('imter__pat.jpg');
+  @include box-shadow( inset 0px 2px 5px 0px rgba(0,0,0,0.15) ,  inset 0px -2px 5px 0px rgba(0,0,0,0.15));
+}
+.first-content {
+  margin-top: -7em;
+  @include box-shadow( 2px 0px 5px 0px rgba(0,0,0,0.15));
+}
+.main-services-and-features,
+.main-portfolio {
+  padding: 6em 0 4em 0;
+}
 .main-services__column {
   @include span(6 of 12)
 }
@@ -81,10 +110,6 @@
 }
 
 
-.main-portfolio {
-  padding: 2em 0 4em 0;
-  overflow: hidden;
-}
 .jcarousel {
   position: relative;
   overflow: hidden;
@@ -99,7 +124,6 @@
 }
 
 .carousel-portfolio {
-  margin: 2em 0;
   clear: both;
   height: auto;
   overflow: hidden;
@@ -163,8 +187,10 @@
 }
 
 .carousel-controls {
+  position: absolute;
   width: 100px;
-  float: right;
+  right: 0;
+  top: 7em;
   margin-right: 5px;
   margin-bottom: 1em;
 }

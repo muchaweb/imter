@@ -550,7 +550,7 @@ body {
   margin: 0;
   position: relative;
   top: 0.75em;
-  background: url('../images/imter__logo.png?1408991651') no-repeat;
+  background: url('../images/imter__logo.png?1409064322') no-repeat;
   width: 137px;
   height: 138px;
 }
@@ -778,7 +778,7 @@ body {
 }
 
 .slope__child--textured {
-  background: url('../images/imter__pat.jpg?1408991651');
+  background: url('../images/imter__pat.jpg?1409064322');
   -moz-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.15);
@@ -793,7 +793,7 @@ body {
 
 .main-services-and-features,
 .main-portfolio {
-  padding: 6em 0 4em 0;
+  padding: 4em 0 6em 0;
 }
 
 .main-services__column {
@@ -953,7 +953,7 @@ body {
   position: absolute;
   width: 100px;
   right: 0;
-  top: 7em;
+  top: 5em;
   margin-right: 5px;
   margin-bottom: 1em;
 }
@@ -977,6 +977,75 @@ body {
 * Footer styles.
 * ----------------------------------------------------------------------------------------------------
 **/
+.footer {
+  padding: 4em 0 1em 0;
+}
+.footer .heading {
+  color: #20368d;
+  font-size: 18.2px;
+  font-weight: bold;
+}
+
+.footer__column {
+  width: 220px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.menu-vertical > .menu__item {
+  display: block;
+  float: none;
+  margin: 0;
+}
+.menu-vertical > .menu__item:hover > .menu__link, .menu-vertical > .menu__item.js__action--active > .menu__link {
+  background: none;
+  color: #161616;
+}
+.menu-vertical .menu__link {
+  padding-left: 0;
+  font-weight: normal;
+}
+
+.menu-social__item {
+  margin-bottom: 0.5em;
+}
+
+.menu-social__link {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+.menu-social__link:hover {
+  color: #161616;
+}
+.menu-social__link .menu-social__label {
+  padding-left: 0.5em;
+  text-transform: uppercase;
+}
+
+.brand__logo--small, .brand__link--small {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 0;
+  background: url('../images/imter__logo--small.png?1409064322') no-repeat;
+}
+
+.brand__link--small {
+  background: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+.phone-link, .link-mw {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+.phone-link span, .link-mw span {
+  padding-left: 0.5em;
+}
+
 /**
 * ----------------------------------------------------------------------------------------------------
 * Buttons styles.

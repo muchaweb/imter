@@ -3,4 +3,69 @@
 * Footer styles.
 * ----------------------------------------------------------------------------------------------------
 **/
+.footer {
+  padding: 4em 0 1em 0;
+  .heading {
+    color: $color__base--blue;
+    font-size: $base__font--size * 1.3;
+    font-weight: bold;
+  }
+}
+.footer__column {
+  @include span(3 of 12);
+}
+.menu-vertical {
+  > .menu__item {
+    display: block;
+    float: none;
+    margin: 0;
+    &:hover > .menu__link, &.js__action--active > .menu__link {
+      background: none;
+      color: darken($color__text, 10%);
+    }
+  }
+
+  .menu__link {
+    padding-left: 0;
+    font-weight: normal;
+  }
+}
+
+
+.menu-social__item {
+  margin-bottom: 0.5em;
+}
+.menu-social__link {
+  color: $color__text;
+  text-decoration: none;
+  &:hover {
+    color: darken($color__text, 10%);
+  }
+  .menu-social__label {
+    padding-left: 0.5em;
+    text-transform: uppercase;
+  }
+}
+
+.brand__logo--small {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 0;
+  background: image-url('imter__logo--small.png') no-repeat;
+}
+
+.brand__link--small {
+  @extend .brand__logo--small;
+  background: transparent;
+
+  @include hide-text;
+}
+.phone-link, .link-mw {
+  color: $color__text;
+  text-decoration: none;
+  span {
+    padding-left: 0.5em;
+  }
+}
 

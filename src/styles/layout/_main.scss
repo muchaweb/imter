@@ -207,3 +207,47 @@
     background: darken($color__base--snow, 10%);
   }
 }
+
+.panel-header {
+  width: 100%;
+  padding: 16em 0 6em 0;
+  position: relative;
+  margin-top: -6em;
+  background: image-url("imter__header.png") no-repeat center top;
+}
+
+.about-imter {
+  @include span( 12 of 12);
+  .caption__title {
+    margin-left: 0;
+  }
+}
+
+.our-vision {
+  background: image-url("imter__pat.jpg") repeat-x center top;
+  padding: 6em 0 4em 0;
+}
+
+.our-vision__column {
+  @include span(4 of 12);
+  p , li  {
+    color: $color__text--light;
+  }
+  li {
+    font-style: italic;
+  }
+  .heading {
+    font-size: $base__font--size * 1.5;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    position: relative;
+    &:before {
+      content: "";
+      width: $base__font--size * 4;
+      height: 1px;
+      background: $color__text;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

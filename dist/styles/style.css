@@ -550,7 +550,7 @@ body {
   margin: 0;
   position: relative;
   top: 0.75em;
-  background: url('../images/imter__logo.png?1409064322') no-repeat;
+  background: url('../images/imter__logo.png?1409099126') no-repeat;
   width: 137px;
   height: 138px;
 }
@@ -675,6 +675,7 @@ body {
   color: white;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(75%, #000000));
   background-image: -moz-linear-gradient(rgba(255, 255, 255, 0) 0%, #000000 75%);
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, #000000 75%);
   background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, #000000 75%);
@@ -695,7 +696,7 @@ body {
 .caption__title:before {
   content: "";
   position: absolute;
-  width: 336px;
+  width: 224px;
   height: 3px;
   bottom: 0;
   background: #7ac142;
@@ -778,7 +779,7 @@ body {
 }
 
 .slope__child--textured {
-  background: url('../images/imter__pat.jpg?1409064322');
+  background: url('../images/imter__pat.jpg?1409099126');
   -moz-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.15);
@@ -914,9 +915,11 @@ body {
   background: rgba(47, 47, 47, 0.5);
   text-align: center;
   -moz-transition-property: bottom;
+  -o-transition-property: bottom;
   -webkit-transition-property: bottom;
   transition-property: bottom;
   -moz-transition-duration: 0.33s;
+  -o-transition-duration: 0.33s;
   -webkit-transition-duration: 0.33s;
   transition-duration: 0.33s;
 }
@@ -970,6 +973,56 @@ body {
 }
 .carousel-controls__item:hover {
   background: #c8c8c8;
+}
+
+.panel-header {
+  width: 100%;
+  padding: 16em 0 6em 0;
+  position: relative;
+  margin-top: -6em;
+  background: url('../images/imter__header.png?1409100062') no-repeat center top;
+}
+
+.about-imter {
+  width: 940px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.about-imter .caption__title {
+  margin-left: 0;
+}
+
+.our-vision {
+  background: url('../images/imter__pat.jpg?1409099126') repeat-x center top;
+  padding: 6em 0 4em 0;
+}
+
+.our-vision__column {
+  width: 300px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.our-vision__column p, .our-vision__column li {
+  color: #666666;
+}
+.our-vision__column li {
+  font-style: italic;
+}
+.our-vision__column .heading {
+  font-size: 21px;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  position: relative;
+}
+.our-vision__column .heading:before {
+  content: "";
+  width: 56px;
+  height: 1px;
+  background: #2f2f2f;
+  position: absolute;
+  bottom: 0;
 }
 
 /**
@@ -1028,7 +1081,7 @@ body {
   width: 62px;
   height: 62px;
   margin-bottom: 0;
-  background: url('../images/imter__logo--small.png?1409064322') no-repeat;
+  background: url('../images/imter__logo--small.png?1409099126') no-repeat;
 }
 
 .brand__link--small {
@@ -1078,7 +1131,7 @@ hr {
   height: 1px;
   margin: 42px 0;
   border: none;
-  background-color: #eeeeee;
+  background-color: #EEE;
 }
 
 /**

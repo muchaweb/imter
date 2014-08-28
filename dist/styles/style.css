@@ -550,7 +550,7 @@ body {
   margin: 0;
   position: relative;
   top: 0.75em;
-  background: url('../images/imter__logo.png?1409099126') no-repeat;
+  background: url('../images/imter__logo.png?1409186081') no-repeat;
   width: 137px;
   height: 138px;
 }
@@ -779,7 +779,7 @@ body {
 }
 
 .slope__child--textured {
-  background: url('../images/imter__pat.jpg?1409099126');
+  background: url('../images/imter__pat.jpg?1409186082');
   -moz-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.15);
@@ -977,24 +977,40 @@ body {
 
 .panel-header {
   width: 100%;
-  padding: 16em 0 6em 0;
+  padding: 16em 0 2em 0;
   position: relative;
   margin-top: -6em;
-  background: url('../images/imter__header.png?1409100062') no-repeat center top;
+  background: url('../images/imter__header.png?1409186081') no-repeat center top;
 }
 
-.about-imter {
+.general-section {
   width: 940px;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
 }
-.about-imter .caption__title {
+.general-section .caption__title {
+  margin-left: 0;
+  font-size: 30.8px;
+  margin-bottom: 1em;
+}
+
+.general-section__left,
+.general-section__right {
+  width: 460.0px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-left: 0;
 }
 
+p.first {
+  margin-top: 0;
+}
+
 .our-vision {
-  background: url('../images/imter__pat.jpg?1409099126') repeat-x center top;
+  background: url('../images/imter__pat--clouds.png?1409186081') repeat-x;
+  background-color: #e4f4ff;
   padding: 6em 0 4em 0;
 }
 
@@ -1023,6 +1039,130 @@ body {
   background: #2f2f2f;
   position: absolute;
   bottom: 0;
+}
+
+#accordion .accordion__heading {
+  cursor: pointer;
+  padding: 1em 1em 1em 2em;
+  background: #7ac142;
+  margin-bottom: 1em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+#accordion .accordion__heading:hover {
+  background: #6eb03a;
+}
+#accordion .accordion__title {
+  margin: 0;
+  text-transform: uppercase;
+}
+#accordion .accordion__title a {
+  display: block;
+  color: white;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  font-family: "Jura", serif;
+  font-weight: 700;
+}
+#accordion .accordion__title a span, #accordion .accordion__title a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+#accordion .accordion__title a .fa {
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  top: 3px;
+}
+#accordion .accordion__body {
+  display: none;
+  padding: 0 1em 1em;
+}
+#accordion .accordion__panel.active .accordion__body {
+  display: block;
+}
+
+.partners {
+  margin-top: 2em;
+  border-bottom: 1px solid #2f2f2f;
+}
+
+.partner-list {
+  display: table;
+  text-align: center;
+  width: 100%;
+  list-style: none;
+}
+
+.partner-list__item {
+  width: 140px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.partner-list__item a {
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+.partner-list__item a > img {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.partner-list__item a:hover > img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.button-blue {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #20368d;
+  font-family: "Jura", serif;
+  font-size: 21px;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+.button-blue:hover {
+  background: #1b2e78;
+}
+
+.funding {
+  margin: 21px 0;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #2f2f2f;
+}
+.funding h3, .funding p, .funding a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.funding h3 {
+  padding-right: 0.5em;
+}
+.funding p {
+  width: 60%;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-left: 1px solid #2f2f2f;
+}
+
+.funding-list {
+  display: table;
+  width: 100%;
+  text-align: center;
+  margin: 2em 0;
+}
+.funding-list .funding-list__item {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /**
@@ -1081,7 +1221,7 @@ body {
   width: 62px;
   height: 62px;
   margin-bottom: 0;
-  background: url('../images/imter__logo--small.png?1409099126') no-repeat;
+  background: url('../images/imter__logo--small.png?1409186081') no-repeat;
 }
 
 .brand__link--small {

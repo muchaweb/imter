@@ -32,4 +32,13 @@
     transition: 'horizontal'
   });
 
+  $("#accordion .accordion__heading").click(function() {
+    $(".accordion__body").slideUp('slow');
+    console.log($(this).next());
+    if (!$(this).next().is(":visible")) {
+      $(this).next().slideDown();
+    }
+    return false;
+  });
+
 }).call(this);

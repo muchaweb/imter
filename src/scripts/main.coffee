@@ -26,3 +26,12 @@ portfolioBlock.hover ->
   $(this).toggleClass "js__action--active"
 
 $('.slider').slippry( useCss: true, transition: 'horizontal' )
+
+$("#accordion .accordion__heading").click ->
+  #slide up all the link lists
+  $(".accordion__body").slideUp('slow')
+
+  #slide down the link list below the h3 clicked - only if its closed
+  console.log  $(this).next()
+  $(this).next().slideDown()  unless $(this).next().is(":visible")
+  return false

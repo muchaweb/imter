@@ -210,21 +210,36 @@
 
 .panel-header {
   width: 100%;
-  padding: 16em 0 6em 0;
+  padding: 16em 0 2em 0;
   position: relative;
   margin-top: -6em;
   background: image-url("imter__header.png") no-repeat center top;
 }
 
-.about-imter {
+.general-section {
   @include span( 12 of 12);
   .caption__title {
     margin-left: 0;
+    font-size: $base__font--size * 2.2;
+    margin-bottom: 1em;
   }
 }
 
+.general-section__left,
+.general-section__right {
+  @include span(6 of 12);
+  margin-left: 0;
+}
+
+p.first {
+  margin-top: 0;
+}
+
+
+
 .our-vision {
-  background: image-url("imter__pat.jpg") repeat-x center top;
+  background: image-url("imter__pat--clouds.png") repeat-x;
+  background-color: #e4f4ff;
   padding: 6em 0 4em 0;
 }
 
@@ -249,5 +264,125 @@
       position: absolute;
       bottom: 0;
     }
+  }
+}
+
+#accordion {
+  .accordion__heading {
+    cursor: pointer;
+    padding: 1em 1em 1em 2em;
+    background: $color__base--law-green;
+    margin-bottom: 1em;
+    @include border-radius(0.5em);
+    &:hover {
+      background: darken($color__base--law-green, 5%);
+    }
+  }
+  .accordion__title {
+    margin: 0;
+    text-transform: uppercase;
+
+    a {
+      display: block;
+      color: white;
+      width: 100%;
+      text-decoration: none;
+      position: relative;
+      font-family: $base__font--modern;
+      font-weight: 700;
+      span, i {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .fa {
+        position: absolute;
+        right: 0;
+        font-size: 20px;
+        top: 3px;
+      }
+    }
+  }
+  .accordion__body {
+    display: none;
+    padding: 0 1em 1em
+  }
+  .accordion__panel {
+    &.active .accordion__body {
+      display: block;
+    }
+  }
+}
+
+.partners {
+  margin-top: 2em;
+  border-bottom: 1px solid $color__text;
+}
+.partner-list {
+  display: table;
+  text-align: center;
+  width: 100%;
+  list-style: none;
+}
+.partner-list__item {
+  @include span(2 of 12);
+  a {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    > img {
+      @include filter(grayscale(1));
+    }
+    &:hover > img {
+      @include filter(grayscale(0));
+    }
+  }
+}
+
+.button-blue {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: $color__base--blue;
+  font-family: $base__font--modern;
+  font-size: $base__font--size * 1.5;
+  @include border-radius(0.25em);
+  &:hover {
+    background: darken($color__base--blue, 5%);
+  }
+}
+
+.funding {
+  margin: $margin__general/2 0;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 1em;
+  border-bottom: 1px solid $color__text;
+  h3, p, a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  h3 {
+    padding-right: 0.5em;
+  }
+  p {
+    width: 60%;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-left: 1px solid $color__text;
+  }
+}
+
+.funding-list {
+  display: table;
+  width: 100%;
+  text-align: center;
+  margin: 2em 0;
+
+  .funding-list__item {
+    display: table-cell;
+    vertical-align: middle;
   }
 }
